@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		537444E8241F656F00D72D42 /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537444E7241F656F00D72D42 /* splashViewController.swift */; };
 		537444EA241FBF6000D72D42 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537444E9241FBF6000D72D42 /* loginViewController.swift */; };
+		53DD4987241FC30900D5734C /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD4986241FC30900D5734C /* signupViewController.swift */; };
 		53F98F6E241E703C0068EB25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F98F6D241E703C0068EB25 /* AppDelegate.swift */; };
 		53F98F70241E703C0068EB25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F98F6F241E703C0068EB25 /* SceneDelegate.swift */; };
 		53F98F72241E703C0068EB25 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F98F71241E703C0068EB25 /* FirstViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		537444E7241F656F00D72D42 /* splashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
 		537444E9241FBF6000D72D42 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		53DD4986241FC30900D5734C /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		53F98F6A241E703C0068EB25 /* Agora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F98F6D241E703C0068EB25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F98F6F241E703C0068EB25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				53F98F7D241E70450068EB25 /* Info.plist */,
 				537444E7241F656F00D72D42 /* splashViewController.swift */,
 				537444E9241FBF6000D72D42 /* loginViewController.swift */,
+				53DD4986241FC30900D5734C /* signupViewController.swift */,
 			);
 			path = Agora;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				537444EA241FBF6000D72D42 /* loginViewController.swift in Sources */,
 				53F98F72241E703C0068EB25 /* FirstViewController.swift in Sources */,
 				53F98F6E241E703C0068EB25 /* AppDelegate.swift in Sources */,
+				53DD4987241FC30900D5734C /* signupViewController.swift in Sources */,
 				53F98F70241E703C0068EB25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
