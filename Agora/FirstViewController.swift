@@ -11,7 +11,7 @@ import UIKit
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let titles = ["Agora UI Design", "Grand Grammy Election", "Class elections"]
-    let descriptions = ["To elect the best design for the Agora mobile app", "The biggest user election to decide the best album of 2019", "Elections to choose the class representative"]
+    let descriptions = ["To elect the best design for the Agora mobile app\nEnds Tomorrow at 3:00 pm", "The biggest user election to decide the best album of 2019", "Elections to choose the class representative"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
