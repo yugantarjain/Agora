@@ -9,11 +9,21 @@
 import UIKit
 
 class Create1ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        if tableView.tag == 10 {
+            return 3
+        } else {
+            return 5
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView.tag == 10 {
+            var i = indexPath.row + 10
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(i), for: indexPath)
+            return cell
+        }
         var i = indexPath.row/3
         if indexPath.row == 3 {
             i = 3
@@ -24,8 +34,10 @@ class Create1ViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     let candidates = ["Erin", "Ankur", "Sam", "|", "Add Candidate"]
+    @IBOutlet var box: [UITextField]!
     
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var table2: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +45,13 @@ class Create1ViewController: UIViewController, UITableViewDataSource, UITableVie
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        table2.delegate = self
+        table2.dataSource = self
+        table2.tag = 10
+        
+        for b in box {
+            b.layer.cornerRadius = 6
+        }
     }
     
 
