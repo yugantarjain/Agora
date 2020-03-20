@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashboard-->
+        <!--My Elections-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Agora" customModuleProvider="target" sceneMemberID="viewController">
@@ -300,8 +300,8 @@ Elections</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="FML-4q-CUC">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="person.crop.square.fill" catalog="system" id="x3b-mx-VUd">
+                    <navigationItem key="navigationItem" title="My Elections" id="FML-4q-CUC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="person.circle.fill" catalog="system" id="x3b-mx-VUd">
                             <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Create" image="plus.circle.fill" catalog="system" style="done" id="ezN-7N-rhx">
@@ -326,23 +326,206 @@ Elections</string>
         <!--Create Election-->
         <scene sceneID="3m5-pp-HKS">
             <objects>
-                <viewController id="lmt-YZ-J7m" sceneMemberID="viewController">
+                <viewController id="lmt-YZ-J7m" customClass="Create1ViewController" customModule="Agora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EqI-lz-geC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBc-GB-fpW">
+                                <rect key="frame" x="20" y="169" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1IO-q7-yRR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Optional" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-Hy-bkM">
+                                <rect key="frame" x="20" y="256" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ecp-IP-ioH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2w-Kc-7XA">
+                                <rect key="frame" x="20" y="140" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLh-tl-BBX">
+                                <rect key="frame" x="20" y="227" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="191-KI-7jm">
+                                <rect key="frame" x="0.0" y="364" width="414" height="449"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="0" textLabel="Dcy-P6-v8I" imageView="QD5-Jd-HTi" style="IBUITableViewCellStyleDefault" id="E7C-Mq-JiQ">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E7C-Mq-JiQ" id="n2R-TE-4qH">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dcy-P6-v8I">
+                                                    <rect key="frame" x="59.166666666666657" y="0.0" width="294.83333333333331" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="person.crop.circle.fill" catalog="system" id="QD5-Jd-HTi">
+                                                    <rect key="frame" x="19.833333333333336" y="10.333333333333334" width="24.333333333333332" height="23.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="3" textLabel="gu7-di-zOk" imageView="wVf-cG-bue" style="IBUITableViewCellStyleDefault" id="2Bg-Gl-ATp">
+                                        <rect key="frame" x="20" y="99.333332061767578" width="374" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Bg-Gl-ATp" id="OG5-M1-gpq">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gu7-di-zOk">
+                                                    <rect key="frame" x="59.166666666666657" y="0.0" width="294.83333333333331" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="person.crop.circle.fill" catalog="system" id="wVf-cG-bue">
+                                                    <rect key="frame" x="19.833333333333336" y="12.333333333333334" width="24.333333333333332" height="23.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="1" textLabel="C7d-0I-fBr" style="IBUITableViewCellStyleDefault" id="xkd-n0-BkD">
+                                        <rect key="frame" x="20" y="147.33333206176758" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xkd-n0-BkD" id="zAK-Dr-ckp">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Add Candidate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C7d-0I-fBr">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Candidates for Election" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-2O-dZ8">
+                                <rect key="frame" x="20" y="364" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y2w-Kc-7XA" firstAttribute="leading" secondItem="EqI-lz-geC" secondAttribute="leadingMargin" id="2Fw-By-prS"/>
+                            <constraint firstItem="nBc-GB-fpW" firstAttribute="leading" secondItem="PLh-tl-BBX" secondAttribute="leading" id="47e-OG-QA5"/>
+                            <constraint firstItem="191-KI-7jm" firstAttribute="bottom" secondItem="XoB-WQ-5Cf" secondAttribute="bottom" id="JjX-cM-pdN"/>
+                            <constraint firstItem="y2w-Kc-7XA" firstAttribute="leading" secondItem="nBc-GB-fpW" secondAttribute="leading" id="K2d-25-r1c"/>
+                            <constraint firstItem="PLh-tl-BBX" firstAttribute="leading" secondItem="vGA-Hy-bkM" secondAttribute="leading" id="Mpp-Ja-MPx"/>
+                            <constraint firstItem="nBc-GB-fpW" firstAttribute="top" secondItem="y2w-Kc-7XA" secondAttribute="bottom" constant="8" id="TNQ-Ab-aNc"/>
+                            <constraint firstItem="vGA-Hy-bkM" firstAttribute="top" secondItem="PLh-tl-BBX" secondAttribute="bottom" constant="8" id="q1h-Mk-7VW"/>
+                            <constraint firstItem="y2w-Kc-7XA" firstAttribute="top" secondItem="XoB-WQ-5Cf" secondAttribute="top" id="shh-Vn-ry6"/>
+                            <constraint firstItem="nBc-GB-fpW" firstAttribute="trailing" secondItem="EqI-lz-geC" secondAttribute="trailingMargin" id="w52-84-foU"/>
+                            <constraint firstItem="nBc-GB-fpW" firstAttribute="trailing" secondItem="vGA-Hy-bkM" secondAttribute="trailing" id="xzZ-BX-BGN"/>
+                            <constraint firstItem="PLh-tl-BBX" firstAttribute="top" secondItem="nBc-GB-fpW" secondAttribute="bottom" constant="8" id="z07-f6-aZc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XoB-WQ-5Cf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Create Election" id="13K-zk-jBk"/>
+                    <navigationItem key="navigationItem" title="Create Election" id="13K-zk-jBk">
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="HSZ-FT-oW2">
+                            <connections>
+                                <segue destination="33m-Xy-Ws1" kind="show" id="VrW-vn-7o7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="191-KI-7jm" id="eVC-kK-IjN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cJ-L4-ZsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3583" y="-320"/>
+            <point key="canvasLocation" x="3479.7101449275365" y="-320.08928571428572"/>
+        </scene>
+        <!--Create Election-->
+        <scene sceneID="4gp-kD-b7u">
+            <objects>
+                <viewController id="33m-Xy-Ws1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vib-ie-SIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-Md-jF3">
+                                <rect key="frame" x="20" y="274" width="374" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="eu9-KR-NKz"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYZ-4r-pUq">
+                                <rect key="frame" x="20" y="245" width="78" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Yce-bl-bj2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGJ-zA-i1z">
+                                <rect key="frame" x="20" y="452" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fAK-zK-3ru"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zyl-Hp-uve">
+                                <rect key="frame" x="20" y="481" width="374" height="170"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DGJ-zA-i1z" firstAttribute="leading" secondItem="zyl-Hp-uve" secondAttribute="leading" id="Avc-rz-mNB"/>
+                            <constraint firstItem="zyl-Hp-uve" firstAttribute="top" secondItem="DGJ-zA-i1z" secondAttribute="bottom" constant="8" id="Fg3-2x-90v"/>
+                            <constraint firstItem="lcs-Md-jF3" firstAttribute="trailing" secondItem="zyl-Hp-uve" secondAttribute="trailing" id="GhD-oX-Yz0"/>
+                            <constraint firstItem="sYZ-4r-pUq" firstAttribute="leading" secondItem="lcs-Md-jF3" secondAttribute="leading" id="KEz-DD-mi7"/>
+                            <constraint firstItem="DGJ-zA-i1z" firstAttribute="top" secondItem="lcs-Md-jF3" secondAttribute="bottom" constant="8" id="L5S-Ns-udg"/>
+                            <constraint firstItem="lcs-Md-jF3" firstAttribute="leading" secondItem="DGJ-zA-i1z" secondAttribute="leading" id="iGj-re-x16"/>
+                            <constraint firstItem="lcs-Md-jF3" firstAttribute="top" secondItem="sYZ-4r-pUq" secondAttribute="bottom" constant="8" id="uFE-dd-HVK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iQ7-Ez-SjV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Election" id="J7c-N2-O1r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKW-iY-lSz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4229" y="-320"/>
         </scene>
         <!--Voting Invitations-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Agora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -443,6 +626,7 @@ Elections</string>
                         <outlet property="table" destination="yZK-Ph-0YV" id="Pgn-0h-CGZ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3479.7101449275365" y="359.59821428571428"/>
         </scene>
@@ -790,11 +974,11 @@ Elections</string>
             </objects>
             <point key="canvasLocation" x="-357.97101449275362" y="728.57142857142856"/>
         </scene>
-        <!--Elections-->
+        <!--My Elections-->
         <scene sceneID="Lfe-gp-Orv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q4B-V1-WcL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Elections" image="rectangle.grid.2x2.fill" catalog="system" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="My Elections" image="rectangle.grid.2x2.fill" catalog="system" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TFr-Lo-rhn">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -866,7 +1050,8 @@ Elections</string>
         <image name="demo" width="1600" height="900"/>
         <image name="fb" width="988" height="160"/>
         <image name="hourglass" catalog="system" width="54" height="64"/>
-        <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
         <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
         <image name="rectangle.grid.2x2.fill" catalog="system" width="64" height="48"/>
     </resources>
