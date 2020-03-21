@@ -361,12 +361,6 @@ Elections</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candidates for Election" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-2O-dZ8">
-                                <rect key="frame" x="20" y="364" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xNy-xf-zH8">
                                 <rect key="frame" x="0.0" y="770" width="414" height="197"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -374,7 +368,7 @@ Elections</string>
                                     <constraint firstAttribute="height" constant="197" id="NtT-BU-XrL"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="10" textLabel="LkA-Ir-Uyx" detailTextLabel="8TO-8z-3eu" style="IBUITableViewCellStyleValue1" id="yXS-HL-dni">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="10" textLabel="LkA-Ir-Uyx" detailTextLabel="8TO-8z-3eu" imageView="dYA-nd-qH4" style="IBUITableViewCellStyleValue1" id="yXS-HL-dni">
                                         <rect key="frame" x="20" y="55.333332061767578" width="374" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXS-HL-dni" id="STY-CF-u9c">
@@ -382,7 +376,7 @@ Elections</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Algorithm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LkA-Ir-Uyx">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="74.666666666666671" height="20.333333333333332"/>
+                                                    <rect key="frame" x="59.166666666666664" y="11.999999999999998" width="74.666666666666671" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -395,7 +389,14 @@ Elections</string>
                                                     <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="command" catalog="system" id="dYA-nd-qH4">
+                                                    <rect key="frame" x="19.833333333333336" y="10.333333333333334" width="24.333333333333332" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </imageView>
                                             </subviews>
+                                            <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="11" textLabel="Pft-Ky-pfU" detailTextLabel="SuQ-Qz-8cd" style="IBUITableViewCellStyleValue1" id="ozK-zf-mYX">
@@ -516,6 +517,12 @@ Elections</string>
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candidates for Election" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-2O-dZ8">
+                                <rect key="frame" x="20" y="368" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -527,7 +534,7 @@ Elections</string>
                             <constraint firstItem="y2w-Kc-7XA" firstAttribute="leading" secondItem="nBc-GB-fpW" secondAttribute="leading" id="Ppw-lZ-vJn"/>
                             <constraint firstItem="y2w-Kc-7XA" firstAttribute="top" secondItem="XoB-WQ-5Cf" secondAttribute="top" id="RrG-3z-BNk"/>
                             <constraint firstItem="nBc-GB-fpW" firstAttribute="leading" secondItem="PLh-tl-BBX" secondAttribute="leading" id="UKH-Rf-6e3"/>
-                            <constraint firstItem="191-KI-7jm" firstAttribute="top" secondItem="SZd-2O-dZ8" secondAttribute="top" id="bda-Tj-Bio"/>
+                            <constraint firstItem="191-KI-7jm" firstAttribute="top" secondItem="SZd-2O-dZ8" secondAttribute="top" constant="-4" id="bda-Tj-Bio"/>
                             <constraint firstItem="SZd-2O-dZ8" firstAttribute="centerX" secondItem="191-KI-7jm" secondAttribute="centerX" id="e6h-za-dhJ"/>
                             <constraint firstItem="191-KI-7jm" firstAttribute="leading" secondItem="xNy-xf-zH8" secondAttribute="leading" id="ec1-vF-evN"/>
                             <constraint firstItem="nBc-GB-fpW" firstAttribute="trailing" secondItem="vGA-Hy-bkM" secondAttribute="trailing" id="k2c-RA-pEl"/>
@@ -543,7 +550,12 @@ Elections</string>
                         <viewLayoutGuide key="safeArea" id="XoB-WQ-5Cf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Election" id="13K-zk-jBk">
-                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="HSZ-FT-oW2"/>
+                        <barButtonItem key="rightBarButtonItem" title="Create" style="done" id="HSZ-FT-oW2">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="vPO-Vt-PIr" kind="show" id="2B4-OY-OQC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1050"/>
                     <connections>
@@ -556,6 +568,44 @@ Elections</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cJ-L4-ZsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3479.7101449275365" y="-509.59821428571428"/>
+        </scene>
+        <!--Algorithm-->
+        <scene sceneID="Vjj-S9-ebG">
+            <objects>
+                <tableViewController id="vPO-Vt-PIr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cjo-32-W7V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" textLabel="Zgz-Dg-fhV" rowHeight="60" style="IBUITableViewCellStyleDefault" id="VwI-EK-wYq">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VwI-EK-wYq" id="SHf-RU-dd9">
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zgz-Dg-fhV">
+                                            <rect key="frame" x="20" y="0.0" width="342" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vPO-Vt-PIr" id="sO9-Mj-VwI"/>
+                            <outlet property="delegate" destination="vPO-Vt-PIr" id="lLS-6r-D9n"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Algorithm" id="xc7-SO-fKl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CU7-16-GRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4215.9420289855079" y="-560.49107142857144"/>
         </scene>
         <!--Voting Invitations-->
         <scene sceneID="wg7-f3-ORb">
