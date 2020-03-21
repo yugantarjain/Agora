@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		532A65812424DEE30001BC10 /* Create1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A65802424DEE30001BC10 /* Create1ViewController.swift */; };
 		532A65832424E5FD0001BC10 /* create2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A65822424E5FD0001BC10 /* create2ViewController.swift */; };
+		533857E02426322B007F676B /* AlgoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533857DF2426322B007F676B /* AlgoTableViewController.swift */; };
 		537444E8241F656F00D72D42 /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537444E7241F656F00D72D42 /* splashViewController.swift */; };
 		537444EA241FBF6000D72D42 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537444E9241FBF6000D72D42 /* loginViewController.swift */; };
 		53DD4987241FC30900D5734C /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD4986241FC30900D5734C /* signupViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		532A65802424DEE30001BC10 /* Create1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create1ViewController.swift; sourceTree = "<group>"; };
 		532A65822424E5FD0001BC10 /* create2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = create2ViewController.swift; sourceTree = "<group>"; };
+		533857DF2426322B007F676B /* AlgoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoTableViewController.swift; sourceTree = "<group>"; };
 		537444E7241F656F00D72D42 /* splashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
 		537444E9241FBF6000D72D42 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		53DD4986241FC30900D5734C /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				53DD4986241FC30900D5734C /* signupViewController.swift */,
 				532A65802424DEE30001BC10 /* Create1ViewController.swift */,
 				532A65822424E5FD0001BC10 /* create2ViewController.swift */,
+				533857DF2426322B007F676B /* AlgoTableViewController.swift */,
 			);
 			path = Agora;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				532A65832424E5FD0001BC10 /* create2ViewController.swift in Sources */,
 				537444E8241F656F00D72D42 /* splashViewController.swift in Sources */,
+				533857E02426322B007F676B /* AlgoTableViewController.swift in Sources */,
 				53F98F74241E703C0068EB25 /* SecondViewController.swift in Sources */,
 				532A65812424DEE30001BC10 /* Create1ViewController.swift in Sources */,
 				537444EA241FBF6000D72D42 /* loginViewController.swift in Sources */,

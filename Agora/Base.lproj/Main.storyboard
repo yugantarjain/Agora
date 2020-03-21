@@ -572,28 +572,63 @@ Elections</string>
         <!--Algorithm-->
         <scene sceneID="Vjj-S9-ebG">
             <objects>
-                <tableViewController id="vPO-Vt-PIr" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cjo-32-W7V">
+                <tableViewController id="vPO-Vt-PIr" customClass="AlgoTableViewController" customModule="Agora" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cjo-32-W7V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="fp9-fT-zdL">
+                            <rect key="frame" x="0.0" y="173.33333206176758" width="414" height="191"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-ad-fjW">
+                                    <rect key="frame" x="20" y="20" width="374" height="107"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oklahoma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4st-4L-1Bn">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28.666666666666668"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                            <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voters rank candidates in order of preference, and their votes are initially allocated to their first-choice candidate." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxb-jX-ujS">
+                                            <rect key="frame" x="0.0" y="38.666666666666664" width="374" height="68.333333333333343"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ghu-ad-fjW" firstAttribute="top" secondItem="fp9-fT-zdL" secondAttribute="top" constant="20" symbolic="YES" id="C9O-PQ-aDy"/>
+                                <constraint firstItem="ghu-ad-fjW" firstAttribute="leading" secondItem="fp9-fT-zdL" secondAttribute="leading" constant="20" symbolic="YES" id="kcd-2E-xtO"/>
+                                <constraint firstAttribute="trailing" secondItem="ghu-ad-fjW" secondAttribute="trailing" constant="20" symbolic="YES" id="wUC-Rp-rjr"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" textLabel="Zgz-Dg-fhV" rowHeight="60" style="IBUITableViewCellStyleDefault" id="VwI-EK-wYq">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="algoCell" textLabel="Zgz-Dg-fhV" imageView="lGU-wQ-HYB" rowHeight="100" style="IBUITableViewCellStyleDefault" id="VwI-EK-wYq">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VwI-EK-wYq" id="SHf-RU-dd9">
-                                    <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zgz-Dg-fhV">
-                                            <rect key="frame" x="20" y="0.0" width="342" height="60"/>
+                                            <rect key="frame" x="59" y="0.0" width="303" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="checkmark" catalog="system" id="lGU-wQ-HYB">
+                                            <rect key="frame" x="22.833333333333336" y="42" width="18.333333333333332" height="16.333333333333336"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1126,6 +1161,7 @@ Elections</string>
         <image name="agora" width="300" height="300"/>
         <image name="arrow.2.circlepath.circle.fill" catalog="system" width="64" height="60"/>
         <image name="bolt.horizontal.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="checkmark" catalog="system" width="64" height="56"/>
         <image name="checkmark.circle.fill" catalog="system" width="64" height="60"/>
         <image name="checkmark.rectangle.fill" catalog="system" width="64" height="46"/>
         <image name="chevron.down.square" catalog="system" width="64" height="56"/>
